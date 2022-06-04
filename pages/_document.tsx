@@ -1,7 +1,5 @@
-import { Html, Main } from 'next/document';
-import Document, {
-  provideComponents,
-} from '@next-safe/middleware/dist/document';
+import Document, { Html, Main } from 'next/document';
+import { provideComponents } from '@next-safe/middleware/dist/document';
 
 MyDocument.getInitialProps = async (ctx) => {
   const initialProps = await Document.getInitialProps(ctx);
